@@ -1,0 +1,47 @@
+<div class="box" ><button *ngIf="existo" class="noMargin"  ><img src="assets/img/inicioo.png" (click)="comenzar()"></button> </div>
+<div *ngIf="!existo">
+<p>
+ Datos Cliente
+</p>
+    
+<form *ngIf="informacionService.listo">
+ <div class="form-row">
+
+    <div class="form-group col-md-2">
+        <label for="inputState">{{ lb_region }}</label>
+        <select id="inputState" class="form-control">
+          <option selected>Seleccione...</option>
+          <option>{{ chihuahua }}</option>
+          <option>{{ hermosillo }}</option>
+          <option>{{ mexicali }}</option>
+        </select>
+      </div>
+
+      <div class="form-group col-md-4">
+          <label for="inputEmail4">{{ lb_asesor }}</label>
+          <input type="text" class="form-control" id="inputEmail4" placeholder="Jorge Gonzalez...">
+        </div>
+    
+
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputCity">{{ lb_cliente }}</label>
+      <input type="text" class="form-control" id="inputCity" placeholder="Angel García" >
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="inputEmail4">{{ lb_correo }}</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="cliente@correo.com">
+    </div>
+
+  </div>
+  <br>
+  <br>
+
+  <button  type="submit" class="btn btn-primary" (click)="guardar()" >{{ lb_aceptar }}</button>&nbsp;
+  <button type="button" class="btn btn-secondary btn-md">{{ lb_cancelar }}</button>
+
+</form>
+</div>

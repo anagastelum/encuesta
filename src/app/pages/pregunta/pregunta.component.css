@@ -1,0 +1,50 @@
+
+label {
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+
+}
+
+.box {
+ 
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}
+
+form{
+
+    margin: 50px;
+}
+p{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+img{
+
+
+  width: 300px;
+
+}
+
+.noMargin {
+  
+
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-top: 00px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+
+
+}
